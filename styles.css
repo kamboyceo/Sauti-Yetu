@@ -2083,6 +2083,15 @@ html{
     .d-back h2{
         margin-bottom: 10px;
     }
+    .d-front1 button{
+        font-size: 15px;
+    }
+    .d-front2 button{
+        font-size: 15px;
+    }
+    .d-front3 button{
+        font-size: 15px;
+    }
 
 }
 
