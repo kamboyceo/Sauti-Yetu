@@ -2091,13 +2091,25 @@ html{
         padding-top: 1px;
     }
     .d-front1 button{
-        font-size: 15px;
+        font-size: 18px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 2px;
+        padding-top: 1px;
     }
     .d-front2 button{
-        font-size: 10px;
+        font-size: 18px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 2px;
+        padding-top: 1px;
     }
     .d-front3 button{
-        font-size: 11px;
+        font-size: 18px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 2px;
+        padding-top: 1px;
     }
 
 }
