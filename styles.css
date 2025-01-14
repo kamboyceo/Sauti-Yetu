@@ -2084,7 +2084,7 @@ html{
         margin-bottom: 10px;
     }
     .d-front button{
-        font-size: 17px;
+        font-size: 18px;
         padding-left: 1px;
         padding-right: 1px;
         padding-bottom: 2px;
@@ -2098,10 +2098,6 @@ html{
     }
     .d-front3 button{
         font-size: 11px;
-    }
-    .d-front{
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
 }
