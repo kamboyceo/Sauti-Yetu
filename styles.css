@@ -1399,12 +1399,13 @@ html{
     }
     .logo-title{
         font-size: 20px;
-        margin-left: 30px;
+        margin-left: 60px;
         width: 100%;
     }
     .logo-box p{
         text-align: center;
         width: 300px;
+        margin-left: 10px;
     }
     .label-menu{
         font-size: 20px;
@@ -1421,6 +1422,9 @@ html{
     }
     .email-input{
         margin-left: 20px;
+    }
+    .newsletter-message{
+        margin-left: 10px;
     }
 }
 
