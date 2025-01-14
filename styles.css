@@ -170,21 +170,21 @@ html{
         height: 45vh;
     }
     .carousel-caption{
-        top: 20px;
-        bottom: 10px;
+        height: 100px;
+        top: 30px;
         padding-left: 5px;
         padding-right: 5px;
     }
     .carousel-caption h5{
-        font-size: 14px;
+        font-size: 13px;
     }
     .carousel-caption p{
         line-height: 1.6;
-        font-size: 15px;
+        font-size: 12px;
     }
     .slider-btn .btn{
-        font-size: 13px;
-        margin-right: 10px;
+        margin-top: 20px;
+        font-size: 12px;
     }
     .carousel-indicators{
         bottom: 320px;
@@ -387,7 +387,7 @@ html{
         margin-top: 30px;
     }
     .About{
-        height: 2210px;
+        height: 2130px;
     }
     .container{
         width: 100%;
@@ -400,19 +400,19 @@ html{
         margin: 35px 0px;
     }
     .About-content h2{
-        margin-top: 60px;
+        margin-top: 30px;
         font-size: 25px;
         text-align: center;
     }
     .About-content p{
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
         margin-bottom: 20px;
-        text-align: center;
     }
-    .About-content button{
-        font-size: 19px;
+    .About-content a{
+        font-size: 15px;
         padding: 8px 16px;
+        margin-left: 80px;
     }
     .About-image{
         width: 100%;
@@ -420,9 +420,13 @@ html{
     .mission{
         width: 100%;
         padding: 20px;
+        margin-top: 90px;
     }
     .mission .mission-box{
         margin-top: 30px;
+    }
+    .mission .mission-box h3{
+        font-size: 25px;
     }
     .container{
         height: 450px;
@@ -542,7 +546,7 @@ html{
         height: 1100px;
     }
     .section-heading{
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 2px;
     }
     .column{
