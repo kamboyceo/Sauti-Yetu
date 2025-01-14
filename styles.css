@@ -2083,14 +2083,25 @@ html{
     .d-back h2{
         margin-bottom: 10px;
     }
+    .d-front button{
+        font-size: 17px;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 2px;
+        padding-top: 1px;
+    }
     .d-front1 button{
-        font-size: 5px;
+        font-size: 15px;
     }
     .d-front2 button{
         font-size: 10px;
     }
     .d-front3 button{
         font-size: 11px;
+    }
+    .d-front{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
