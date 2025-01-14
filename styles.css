@@ -1382,7 +1382,7 @@ html{
         gap: 25px;
     }
     .copyright-txt{
-        font-size: 13px;
+        font-size: 12px;
         text-align: center;
     }
     .social-media i{
@@ -1398,12 +1398,16 @@ html{
         margin-left: 80px;
     }
     .logo-title{
+        font-size: 20px;
         margin-left: 30px;
         width: 100%;
     }
     .logo-box p{
         text-align: center;
         width: 300px;
+    }
+    .label-menu{
+        font-size: 20px;
     }
     .menu-box a{
         text-decoration: none;
@@ -1414,6 +1418,9 @@ html{
     }
     .label-menu-box{
         text-align: center;
+    }
+    .email-input{
+        margin-left: 20px;
     }
 }
 
