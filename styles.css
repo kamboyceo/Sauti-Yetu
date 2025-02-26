@@ -282,8 +282,9 @@ html{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
     margin-top: 150px;
+    margin-left: 80px;
+    margin-top: 70px;
 }
 
 .mission .mission-box{
@@ -421,6 +422,8 @@ html{
         width: 100%;
         padding: 20px;
         margin-top: 90px;
+        margin-left:auto;
+        margin-top: auto;
     }
     .mission .mission-box{
         margin-top: 30px;
