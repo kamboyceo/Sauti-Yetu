@@ -284,7 +284,6 @@ html{
     flex-wrap: wrap;
     margin-left: 80px;
     margin-top: 70px;
-    background-color: #e31c24;
 }
 
 .mission .mission-box{
@@ -421,7 +420,7 @@ html{
     .mission{
         width: 100%;
         padding: 20px;
-        margin-top: 90px;
+        margin-top: 1000px;
         margin-left:auto;
         margin-top: auto;
     }
