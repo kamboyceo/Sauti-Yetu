@@ -788,6 +788,7 @@ html{
     .Our-Team{
         height: 700px;
         padding-top: 45px;
+        margin-top: 1420px;
     }
     .Team-Top h1{
         font-size: 30px;
@@ -1093,6 +1094,7 @@ html{
         margin-bottom: 30px;
     }
     .m-contact{
+        margin-top: 100px;
         padding-top: 0px;
         padding-left: 10px;
         padding-right: 10px;
