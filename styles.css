@@ -2107,7 +2107,9 @@ html{
     padding-left: 30px;
     padding-right: 30px;
   }
-
+  .g-heading{
+    margin-top: 10px;
+  }
   .g-heading h1{
     font-size: 20px;
     margin-bottom: 20px;
