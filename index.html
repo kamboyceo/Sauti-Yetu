@@ -47,7 +47,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="#Gallery">Gallery</a>
+              <a class="nav-link mx-lg-2"  href="Gallery.html">Gallery</a>
             </li>
 
             <li class="nav-item">
@@ -250,92 +250,7 @@
   </section>
   <!--Services Section End-->
 
-
-  <!-- Gallery 2-->
-   <section id="Gallery" class="Gallery2">
-    <header class="section-head">
-      <h1>Our Gallery</h1>
-    </header>
-
-    <main class="mainContainer">
-      <!--BTN Start-->
-      <div class="btn-group">
-        <button class="button-g active" data-filter="*">All</button>
-        <button class="button-g" data-filter=".women">Women</button>
-        <button class="button-g" data-filter=".children">Children</button>
-        <button class="button-g" data-filter=".students">Students</button>
-        <a class="button-g" href="Gallery.html" role="button">More</a>
-      </div>
-      <!--BTN Ends-->
-      
-      <!--Gallery Section Start-->
-      <div class="GalleryTwo">
-        <!--Card 1 Start-->
-        <div class="item women">
-          <img src="img9.jpg">
-        </div>
-        <!--Card 1 Ends-->
-
-        <!--Card 2 Start-->
-        <div class="item women">
-          <img src="img10.jpg">
-        </div>
-        <!--Card 2 Ends-->
-
-
-        <!--Card 3 Start-->
-        <div class="item children">
-          <img src="bill.jpg">
-        </div>
-        <!--Card 3 Ends-->
-
-        <!--Card 4 Start-->
-        <div class="item children">
-          <img src="martin.jpg">
-        </div>
-        <!--Card 4 Ends-->
-
-        <!--Card 5 Start-->
-        <div class="item students">
-          <img src="anna.jpg">
-        </div>
-        <!--Card 5 Ends-->
-
-        <!--Card 5 Start-->
-        <div class="item students">
-          <img src="img1.jpg">
-        </div>
-        <!--Card 5 Ends-->
-
-      </div>
-      <!--Gallery Section Start-->
-    </main>
-
-   </section>
-   
-   <!--JQuery Link-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <!--Isotope Filter Link-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-
-   <script type="text/javascript">
-    var $galleryContainer = $('.GalleryTwo') .isotope({
-      itemSelector: '.item',
-      layoutMode: 'fitRows'
-    })
-
-    $('.btn-group .button-g').on('click', function(){
-      $('.btn-group .button-g').removeClass('active');
-      $(this).addClass('active');
-
-      var value = $(this).attr('data-filter');
-      $galleryContainer.isotope({
-        filter: value
-      })
-    })
-   </script>
-  <!--Gallery 2 Ends-->
-
+<!--Gallery 2 Was Here-->
 
   <!--Our Team Section Start-->
   <section id="Our-Team" class="Our-Team">
