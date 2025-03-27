@@ -445,7 +445,7 @@ html{
 .section-heading{
     font-size: 35px;
     color: #1085E4;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .row{
@@ -544,7 +544,7 @@ html{
 @media (max-width: 600px){
     .service-section{
         padding: 20px;
-        height: 1100px;
+        height: 2400px;
     }
     .section-heading{
         font-size: 25px;
@@ -678,8 +678,8 @@ html{
 
 /*-----Our Team-----*/
 .Our-Team{
-    height: 600px;
-    padding-top: 95px;
+    height: 550px;
+    padding-top: 35px;
 }
 
 .Team-Top h1{
@@ -787,8 +787,7 @@ html{
 @media (max-width: 600px){
     .Our-Team{
         height: 700px;
-        padding-top: 45px;
-        margin-top: 1420px;
+        padding-top: 20px;
     }
     .Team-Top h1{
         font-size: 30px;
@@ -1066,14 +1065,13 @@ html{
 
 .m-contact{
     margin-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
     justify-content: center;
     min-height: 500px;
     width: 100%;
-    background: #fff;
 }
 
 .m-container{
@@ -1094,14 +1092,14 @@ html{
         margin-bottom: 30px;
     }
     .m-contact{
-        margin-top: 100px;
-        padding-top: 0px;
+        padding-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
         display: flex;
         justify-content: center;
-        min-height: 500px;
+        min-height: 700px;
         width: 100%;
+        margin-bottom: 20px;
     }
     .contact h1{
         color: #1085E4;
