@@ -85,7 +85,6 @@ html{
     left: 0;
     bottom: 0;
     right: 0;
-    background: #1085E4;
     opacity: 0.3;
 }
 
@@ -167,7 +166,7 @@ html{
     }
     .carousel-item{
         top: 80px;
-        height: 100px;
+        height: 10px;
     }
     .carousel-caption{
         height: 100px;
@@ -183,6 +182,7 @@ html{
         font-size: 12px;
     }
     .slider-btn .btn{
+        padding: 5px;
         margin-top: 20px;
         font-size: 12px;
     }
