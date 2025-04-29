@@ -167,7 +167,7 @@ html{
     }
     .carousel-item{
         top: 80px;
-        height: 20vh;
+        height: 100px;
     }
     .carousel-caption{
         height: 100px;
@@ -2153,6 +2153,23 @@ html{
     text-transform: capitalize;
 }
 
+/*---Responsive CSS---*/
+@media (max-width: 768px){
+    .p-heading{
+      margin-top: 20px;
+    }
+    .p-heading h1{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .p-heading p{
+      text-align: justify;
+      font-size: 15px;
+      margin-bottom: 100px;
+    }
+  }
+
 
 /*---Our Team CSS---*/
 /*---Our Team CSS---*/
@@ -2196,5 +2213,21 @@ iframe{
     height: 350px;
 }
 
+/*---Responsive CSS---*/
+@media (max-width: 768px){
+    .T-heading{
+      margin-top: 20px;
+    }
+    .T-heading h1{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .T-heading p{
+      text-align: justify;
+      font-size: 15px;
+      margin-bottom: 100px;
+    }
+  }
 
 /*---Sauti Yetu Foundation Website By KamboyCEO---*/
