@@ -501,10 +501,10 @@ html{
         padding: 2em 1em;
     }
     .counter h1 {
-        font-size: 30px; /* smaller counter number */
+        font-size: 35px; /* smaller counter number */
     }
     .counter h3 {
-        font-size: 20px; /* smaller label */
+        font-size: 25px; /* smaller label */
     }
     .counter:not(:last-child)::before{
         width: 90%;
