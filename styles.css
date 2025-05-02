@@ -497,14 +497,21 @@ html{
 @media screen and (max-width: 500px){
     .counters {
         grid-template-columns: 1fr;
-        row-gap: 5em;
+        row-gap: 3em;
+        padding: 2em 1em;
+    }
+    .counter h1 {
+        font-size: 30px; /* smaller counter number */
+    }
+    .counter h3 {
+        font-size: 20px; /* smaller label */
     }
     .counter:not(:last-child)::before{
         width: 90%;
         height: 2px;
         top: initial;
         right: initial;
-        bottom: -3em;
+        bottom: -1.5em;
         left: 50%;
         transform: translateX(-50%);
     }
