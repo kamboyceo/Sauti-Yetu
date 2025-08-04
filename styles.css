@@ -118,16 +118,26 @@ html{
         height: 45vh;
     }
     .carousel-caption{
-        bottom: 50px;
+        bottom: 120px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .carousel-caption p{
         width: 100%;
     }
     .carousel-caption h5{
-        font-size: 20px;
+        font-size: 30px;
     }
     .carousel-indicators{
         bottom: 320px;
+        visibility: hidden;
+    }
+    .carousel-control-prev{
+        bottom: 1px;
+        visibility: hidden;
+    }
+    .carousel-control-next{
+        bottom: 1px;
         visibility: hidden;
     }
     .Subscribe{
@@ -145,12 +155,12 @@ html{
     }
     .carousel-caption{
         height: 100px;
-        top: 30px;
+        top: 40px;
         padding-left: 5px;
         padding-right: 5px;
     }
     .carousel-caption h5{
-        font-size: 13px;
+        font-size: 17px;
     }
     .carousel-caption p{
         line-height: 1.6;
