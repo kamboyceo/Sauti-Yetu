@@ -12,7 +12,125 @@
 
     <!--Sauti Yetu Foundation Website By KamboyCEO-->
     
-    <title>Sauti Yetu Foundation</title>
+    <title>Sauti Yetu Foundation - News & Events</title>
+    <style>
+        /* Additional styles for news page */
+        .news-section {
+            padding: 80px 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .news-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+        
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .news-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .news-content {
+            padding: 20px;
+        }
+        
+        .news-date {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .news-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .news-excerpt {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: #e74c3c;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .page-link {
+            color: #e74c3c;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .page-link.active {
+            background-color: #e74c3c;
+            color: white;
+            border-color: #e74c3c;
+        }
+        
+        .page-link:hover:not(.active) {
+            background-color: #ddd;
+        }
+        
+        .event-highlight {
+            background-color: #f8d7da;
+            border-left: 5px solid #e74c3c;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .event-title {
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .news-section {
+                padding: 50px 15px;
+            }
+            
+            .section-title {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
   <!--Navigation Bar-->
@@ -42,11 +160,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="Programs.html">Programs And Services</a>
+              <a class="nav-link mx-lg-2"  href="Programs.html">Programs</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="News.html">News & Blog</a>
+              <a class="nav-link mx-lg-2 active"  href="News.html">News</a>
             </li>
 
             <li class="nav-item">
@@ -71,11 +189,71 @@
   </nav> 
   <!--End Navigation Bar-->
 
-  <!--Our Team Header Starts-->
+  <!--News Header Starts-->
   <header class="header-background">
-    <h1>News & Blog</h1>
+    <h1>News & Events</h1>
   </header>
-  <!--Our Team Header Ends-->
+  <!--News Header Ends-->
+
+  <!--News Body Starts-->
+   <div class="N-heading">
+    <h1>Discover the impactful work we're doing in our community</h1>
+  </div>
+  <!--News Body Ends-->
+
+  <!--News Section Starts-->
+  <section>
+      <div class="news-container">
+          
+          <div class="row">
+              <!-- News Item 1 -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="news-card">
+                      <img src="blog1.jpg" alt="Blog" class="news-img">
+                      <div class="b-text">
+                          <div class="news-date">April 22, 2025</div>
+                          <h3 class="b-title">A visit To Nishike Mkono Institute in Tanzania</h3>
+                          <p>Earlier on this day leaders in Sauti Yetu Foundation's Kasulu sub-office in Kigoma Region, 
+                            made a visit to Nishike Mkono Foundation in Tanzania, where they made an agreement to collaborate 
+                            on social activities through various development interventions such as Education, 
+                            Health and Environment implemented through both Organizations.</p>
+                          <a href="https://www.instagram.com/sautiyetufoundation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="read-more">Read More</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- News Item 2 -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="news-card">
+                    <img src="iwaria.jpg" alt="Blog" class="news-img">
+                      <div class="b-text">
+                          <div class="news-date">March 8, 2025</div>
+                          <h3 class="b-title">Women With Disabilities Engaging In Women's Forums</h3>
+                          <p>Tanzanian women's communities have been urged to engage and trust women with disabilities
+                            in various processes to fight for gender equality.</p>
+                          <a href="https://www.instagram.com/sautiyetufoundation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="read-more">Read More</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- News Item 3 -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="news-card">
+                    <img src="blog3.jpg" alt="Blog" class="news-img">
+                      <div class="b-text">
+                          <div class="news-date">April 7, 2025</div>
+                          <h3 class="b-title">Joining Nation In Abeid Karume Death Commemoration</h3>
+                          <p>Sauti Yetu Foundation Participated in the commemoration of the anniversary of the death of Abeid Aman Karume, 
+                            the First President of the revolutionary government of Zanzibar, for performing acts of compassion 
+                            for children with special needs who are students of Hombolo Primary School in the pool by distributing
+                            auxiliary equipment including wheelchairs, food, drinks and hygiene kits</p>
+                          <a href="https://www.instagram.com/sautiyetufoundation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="read-more">Read More</a>
+                      </div>
+                  </div>
+              </div>
+      </div>
+  </section>
+  <!--News Section Ends-->
 
   <!--Header 2 Starts-->
   <header class="header-background2">
@@ -83,7 +261,6 @@
     <h1>Let's Join Together For Charity</h1>
     
     <a class="A-btn" href="Contact.html">Join Us Now <i class="fa-solid fa-arrow-right"></i></a>
-
   </header>
   <!--Header 2 Ends-->
 
@@ -102,10 +279,10 @@
     <div class="label-menu-box">
       <h3 class="label-menu">Quick Links</h3>
       <ul class="menu-box">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="About Us.html">About Us</a></li>
-        <li><a href="Programs.html">Programs & Services</a></li>
-        <li><a href="News.html">News & Blog</a></li>
+        <li><a href="Programs.html">Programs</a></li>
+        <li><a href="News.html">News</a></li>
         <li><a href="Gallery.html">Gallery</a></li>
         <li><a href="Our Team.html">Team</a></li>
         <li><a href="Contact.html">Contact Us</a></li>
