@@ -92,18 +92,18 @@ html{
 }
 
 .carousel-caption{
-    bottom: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
+    bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .carousel-caption h5{
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 700;
 }
 
 .carousel-caption p{
-    font-size: 18px;
+    font-size: 20px;
     top: 2rem;
 }
 
@@ -111,30 +111,6 @@ html{
     visibility: hidden;
 }
 
-.slider-btn .btn{
-    background-color: #1085E4;
-    color: white;
-    border-radius: 5px;
-    margin-top: 50px;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 700;
-    margin-right: 15px;
-    transition: 0.2s ease;
-}
-
-.slider-btn .btn-2{
-    color: white;
-    background-color: transparent;
-    border: solid;
-    border-width: 1px;
-}
-
-.slider-btn .btn:hover{
-    color: #1085E4;
-    background-color: white;
-    transform: scale(0.9);
-}
 
 /*---Responsive CSS---*/
 @media only screen and (min-width:768px) and (max-width:991px){
@@ -153,10 +129,6 @@ html{
     .carousel-indicators{
         bottom: 320px;
         visibility: hidden;
-    }
-    .slider-btn .btn{
-        font-size: 19px;
-        margin-right: 10px;
     }
     .Subscribe{
         font-size: 13px;
@@ -182,11 +154,6 @@ html{
     }
     .carousel-caption p{
         line-height: 1.6;
-        font-size: 12px;
-    }
-    .slider-btn .btn{
-        padding: 5px;
-        margin-top: 20px;
         font-size: 12px;
     }
     .carousel-indicators{
