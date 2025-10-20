@@ -9,10 +9,127 @@
     <link rel="icon" href="fav1.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-    <!--Sauti Yetu Foundation Website By KamboyCEO-->
-    
-    <title>Sauti Yetu Foundation - News & Events</title>
+    <!-- Loading Animation CSS -->
     <style>
+        /* Loading Animation Styles */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        
+        #loading-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .loading-logo {
+            width: 120px;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        .loading-text {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .loading-dots {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 20px;
+            margin-top: 10px;
+        }
+        
+        .loading-dots div {
+            position: absolute;
+            top: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #3498db;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+        
+        .loading-dots div:nth-child(1) {
+            left: 8px;
+            animation: loading-dots1 0.6s infinite;
+        }
+        
+        .loading-dots div:nth-child(2) {
+            left: 8px;
+            animation: loading-dots2 0.6s infinite;
+        }
+        
+        .loading-dots div:nth-child(3) {
+            left: 32px;
+            animation: loading-dots2 0.6s infinite;
+        }
+        
+        .loading-dots div:nth-child(4) {
+            left: 56px;
+            animation: loading-dots3 0.6s infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes loading-dots1 {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes loading-dots3 {
+            0% { transform: scale(1); }
+            100% { transform: scale(0); }
+        }
+        
+        @keyframes loading-dots2 {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(24px, 0); }
+        }
+        
+        /* Page transition effect */
+        .page-transition {
+            transition: opacity 0.3s ease;
+        }
+        
+        .page-loading {
+            opacity: 0.7;
+        }
+
         /* Additional styles for news page */
         .news-section {
             padding: 80px 20px;
@@ -172,8 +289,17 @@
             }
         }
     </style>
+    
+    <title>Sauti Yetu Foundation - News & Events</title>
 </head>
 <body>
+  <!-- Loading Overlay -->
+  <div id="loading-overlay">
+    <img src="sylogo1.png" alt="Sauti Yetu Foundation" class="loading-logo">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading<span class="loading-dots"><div></div><div></div><div></div><div></div></span></div>
+  </div>
+
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
@@ -197,32 +323,32 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="About Us.html">About Us</a>
+              <a class="nav-link mx-lg-2" href="About Us.html">About Us</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="Programs.html">Programs</a>
+              <a class="nav-link mx-lg-2" href="Programs.html">Programs</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2 active"  href="News.html">News</a>
+              <a class="nav-link mx-lg-2 active" href="News.html">News</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="Gallery.html">Gallery</a>
+              <a class="nav-link mx-lg-2" href="Gallery.html">Gallery</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="Our Team.html">Team</a>
+              <a class="nav-link mx-lg-2" href="Our Team.html">Team</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2"  href="Contact.html">Contact Us</a>
+              <a class="nav-link mx-lg-2" href="Contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
-      <a href="Donate.html"  class="Subscribe">DONATE</a>
+      <a href="Donate.html" class="Subscribe">DONATE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -246,7 +372,7 @@
   <section>
       <div class="news-container">
           <div class="row">
-            <!-- News Item 3 -->
+            <!-- News Item 1 -->
               <div class="col-md-6 col-lg-4">
                   <div class="news-card">
                     <img src="Events/New folder/News.jpg" alt="Blog" class="news-img">
@@ -269,7 +395,7 @@
                   </div>
               </div>
 
-              <!-- News Item 1 -->
+              <!-- News Item 2 -->
               <div class="col-md-6 col-lg-4">
                   <div class="news-card">
                       <img src="Events/SYF 1.png" alt="Blog" class="news-img">
@@ -291,22 +417,41 @@
                       </div>
                   </div>
               </div>
-              
-              <!-- News Item 2 -->
+
+              <!-- News Item 3 -->
               <div class="col-md-6 col-lg-4">
                   <div class="news-card">
-                    <img src="iwaria.jpg" alt="Blog" class="news-img">
+                      <img src="Events/nishike mkono.jpg" alt="Blog" class="news-img">
                       <div class="b-text">
-                          <div class="news-date">March 8, 2025</div>
-                          <h3 class="b-title">Women With Disabilities Engaging In Women's Forums</h3>
-                          <p>Tanzanian women's communities have been urged to engage and trust women with disabilities
-                            in various processes to fight for gender equality. This initiative aims to ensure that women
-                            with disabilities have equal representation and opportunities in decision-making forums.
-                            By including women with disabilities in these discussions, we can create more inclusive policies
-                            that address the unique challenges they face. The Sauti Yetu Foundation continues to advocate
-                            for the rights of people with disabilities, particularly women, to ensure their voices are heard
-                            in all spheres of society. This effort aligns with the foundation's mission to promote inclusivity
-                            and equal opportunities for all.</p>
+                          <div class="news-date">April 22, 2025</div>
+                          <h3 class="b-title">A Visit at Nishike Mkono Tanzania in Kasulu Town Council</h3>
+                          <p>Earlier today, during the regular duties of the leaders of the Sauti Yetu Foundation branch office located 
+                            in Kasulu, Kigoma region, they took a tour to visit the Nishike Mkono Tanzania organization, where they
+                             reached agreements to collaborate on social activities through various development initiatives such as
+                              Education, Health, and Environment implemented by both organizations. Furthermore, among other matters, 
+                              the management of Nishike Mkono Tanzania also pledged to support the campaign "Care for the Girl Child,
+                               Build a Better Tomorrow," which will take place on 09/05/2025 at Kumnyika Secondary School in
+                                Kasulu Town Council. The campaign was organized by the Sauti Yetu Foundation in collaboration 
+                                with NFM Radio. In the discussions with Nishike Mkono Tanzania, the delegation from the
+                                Sauti Yetu Foundation was led by Idd M. Abdallah, Project Manager, Vitus Michael, 
+                                 Secretary of the Sauti Yetu Foundation Board, and Buga Omary, Communications Officer of the Sauti Yetu Foundation.</p>
+                          <span class="read-more">Read More</span>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- News Item 4 -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="news-card">
+                    <img src="Events/Karume day.jpg" alt="Blog" class="news-img">
+                      <div class="b-text">
+                          <div class="news-date">April 8, 2025</div>
+                          <h3 class="b-title">Participating in the commemorative celebrations of the death of 
+                            the late Abeid Amani Karume</h3>
+                          <p>The Sauti Yetu Foundation participated in the commemorative celebrations of the death of 
+                            the late Abeid Amani Karume, the First President of the Revolutionary Government of Zanzibar, by 
+                            performing acts of kindness for children with special needs who are students at Hombolo Bwawani 
+                            Primary School, distributing assistive devices including wheelchairs, food, drinks, and hygiene supplies.</p>
                           <span class="read-more">Read More</span>
                       </div>
                   </div>
@@ -388,29 +533,34 @@
     </section>
   </footer>
 
-  <!-- JavaScript to change the year dynamically -->
+  <!-- Loading Animation JavaScript -->
   <script>
-    // Get the current year
-    const currentYear = new Date().getFullYear();
-
-    // Set the current year in the footer
-    document.getElementById("current-year").textContent = currentYear;
-
-    // Read More/Less functionality
+    // Loading Animation Functions
+    function showLoading() {
+        const overlay = document.getElementById('loading-overlay');
+        overlay.classList.add('active');
+        document.body.classList.add('page-loading');
+    }
+    
+    function hideLoading() {
+        const overlay = document.getElementById('loading-overlay');
+        overlay.classList.remove('active');
+        document.body.classList.remove('page-loading');
+    }
+    
+    // Intercept all link clicks
     document.addEventListener('DOMContentLoaded', function() {
-        // Get all read more buttons
+        // Hide loading animation when page first loads
+        setTimeout(hideLoading, 800);
+        
+        // Read More/Less functionality
         const readMoreButtons = document.querySelectorAll('.read-more');
         
-        // Add click event to each button
         readMoreButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Find the parent news card
                 const newsCard = this.closest('.news-card');
-                
-                // Toggle the expanded class
                 newsCard.classList.toggle('expanded');
                 
-                // Change button text based on state
                 if (newsCard.classList.contains('expanded')) {
                     this.textContent = 'Read Less';
                 } else {
@@ -418,7 +568,42 @@
                 }
             });
         });
+        
+        // Add click event listeners to all internal links
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const href = this.href;
+                const currentOrigin = window.location.origin;
+                
+                // Only intercept internal links (not external links, anchors, or javascript links)
+                if (href && 
+                    href.startsWith(currentOrigin) && 
+                    !href.includes('#') && 
+                    !this.classList.contains('no-loading') &&
+                    href !== window.location.href) {
+                    
+                    e.preventDefault();
+                    showLoading();
+                    
+                    // Navigate to the new page after showing the animation
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 600);
+                }
+            });
+        });
+        
+        // Handle browser back/forward buttons
+        window.addEventListener('pageshow', function(event) {
+            if (event.persisted) {
+                hideLoading();
+            }
+        });
     });
+    
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = currentYear;
   </script>
 
   <!--Footer Section End-->
