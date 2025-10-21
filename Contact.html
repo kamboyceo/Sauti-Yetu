@@ -10,158 +10,11 @@
     <link rel="icon" href="fav1.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-    <!-- Loading Animation CSS -->
-    <style>
-        /* Loading Animation Styles */
-        #loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        
-        #loading-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .loading-logo {
-            width: 120px;
-            margin-bottom: 30px;
-            animation: pulse 2s infinite;
-        }
-        
-        .loading-spinner {
-            width: 60px;
-            height: 60px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
-        }
-        
-        .loading-text {
-            font-size: 18px;
-            color: #2c3e50;
-            font-weight: 500;
-            text-align: center;
-        }
-        
-        .loading-dots {
-            display: inline-block;
-            position: relative;
-            width: 80px;
-            height: 20px;
-            margin-top: 10px;
-        }
-        
-        .loading-dots div {
-            position: absolute;
-            top: 0;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            background: #3498db;
-            animation-timing-function: cubic-bezier(0, 1, 1, 0);
-        }
-        
-        .loading-dots div:nth-child(1) {
-            left: 8px;
-            animation: loading-dots1 0.6s infinite;
-        }
-        
-        .loading-dots div:nth-child(2) {
-            left: 8px;
-            animation: loading-dots2 0.6s infinite;
-        }
-        
-        .loading-dots div:nth-child(3) {
-            left: 32px;
-            animation: loading-dots2 0.6s infinite;
-        }
-        
-        .loading-dots div:nth-child(4) {
-            left: 56px;
-            animation: loading-dots3 0.6s infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        @keyframes loading-dots1 {
-            0% { transform: scale(0); }
-            100% { transform: scale(1); }
-        }
-        
-        @keyframes loading-dots3 {
-            0% { transform: scale(1); }
-            100% { transform: scale(0); }
-        }
-        
-        @keyframes loading-dots2 {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(24px, 0); }
-        }
-        
-        /* Page transition effect */
-        .page-transition {
-            transition: opacity 0.3s ease;
-        }
-        
-        .page-loading {
-            opacity: 0.7;
-        }
-        
-        /* Form submission loading state */
-        .form-submitting {
-            position: relative;
-            pointer-events: none;
-        }
-        
-        .form-submitting::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10;
-        }
-    </style>
+    <!--Sauti Yetu Foundation Website By KamboyCEO-->
     
-    <title>Sauti Yetu Foundation - Contact Us</title>
+    <title>Sauti Yetu Foundation</title>
 </head>
 <body>
-  <!-- Loading Overlay -->
-  <div id="loading-overlay">
-    <img src="sylogo1.png" alt="Sauti Yetu Foundation" class="loading-logo">
-    <div class="loading-spinner"></div>
-    <div class="loading-text">Loading<span class="loading-dots"><div></div><div></div><div></div><div></div></span></div>
-  </div>
-  
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
@@ -185,32 +38,32 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="About Us.html">About Us</a>
+              <a class="nav-link mx-lg-2"  href="About Us.html">About Us</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="Programs.html">Programs</a>
+              <a class="nav-link mx-lg-2"  href="Programs.html">Programs</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="News.html">News</a>
+              <a class="nav-link mx-lg-2"  href="News.html">News</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="Gallery.html">Gallery</a>
+              <a class="nav-link mx-lg-2"  href="Gallery.html">Gallery</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="Our Team.html">Team</a>
+              <a class="nav-link mx-lg-2"  href="Our Team.html">Team</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2 active" href="Contact.html">Contact Us</a>
+              <a class="nav-link mx-lg-2 active"  href="Contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
-      <a href="Donate.html" class="Subscribe">DONATE</a>
+      <a href="Donate.html"  class="Subscribe">DONATE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -235,7 +88,7 @@
 
       <div class="m-container">
 
-        <form id="contact-form" action="https://formspree.io/f/mqaagvap" method="POST">
+        <form action="https://formspree.io/f/mqaagvap" method="POST">
           <div class="ContactForm">
              <h2>Send a Message</h2>
              <div class="formBox">
@@ -250,7 +103,7 @@
             </div>
     
             <div class="inputBox w50">
-              <input type="email" name="email" required>
+              <input type="text" type="email" name="email" required>
               <span>Email Address</span>
             </div>
     
@@ -265,7 +118,7 @@
             </div>
     
             <div class="inputBox w100">
-              <input type="submit" value="Send" id="submit-btn">
+              <input type="submit" value="Send">
             </div>
           </div>
         </div>
@@ -278,6 +131,7 @@
   <!--Embedded Map Starts-->
   <div class="Map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126933.91310196498!2d35.69074685080568!3d-6.172941265081298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184de55feeaa7ec9%3A0x8040bf1262e19cee!2sDodoma!5e0!3m2!1sen!2stz!4v1746103100105!5m2!1sen!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   </div>
   <!--Embedded Map Ends-->
 
@@ -344,83 +198,15 @@
     </section>
   </footer>
 
-  <!-- Loading Animation JavaScript -->
+  <!-- JavaScript to change the year dynamically -->
   <script>
-    // Loading Animation Functions
-    function showLoading() {
-        const overlay = document.getElementById('loading-overlay');
-        overlay.classList.add('active');
-        document.body.classList.add('page-loading');
-    }
-    
-    function hideLoading() {
-        const overlay = document.getElementById('loading-overlay');
-        overlay.classList.remove('active');
-        document.body.classList.remove('page-loading');
-    }
-    
-    // Form submission handler
-    function handleFormSubmission() {
-        const form = document.getElementById('contact-form');
-        const submitBtn = document.getElementById('submit-btn');
-        
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                // Show loading state on form
-                submitBtn.value = 'Sending...';
-                submitBtn.disabled = true;
-                form.classList.add('form-submitting');
-                
-                // The form will continue with its normal submission to Formspree
-                // Formspree will handle the actual submission and redirect
-            });
-        }
-    }
-    
-    // Intercept all link clicks
-    document.addEventListener('DOMContentLoaded', function() {
-        // Hide loading animation when page first loads
-        setTimeout(hideLoading, 800);
-        
-        // Initialize form submission handler
-        handleFormSubmission();
-        
-        // Add click event listeners to all internal links
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.href;
-                const currentOrigin = window.location.origin;
-                
-                // Only intercept internal links (not external links, anchors, or javascript links)
-                if (href && 
-                    href.startsWith(currentOrigin) && 
-                    !href.includes('#') && 
-                    !this.classList.contains('no-loading') &&
-                    href !== window.location.href) {
-                    
-                    e.preventDefault();
-                    showLoading();
-                    
-                    // Navigate to the new page after showing the animation
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 600);
-                }
-            });
-        });
-        
-        // Handle browser back/forward buttons
-        window.addEventListener('pageshow', function(event) {
-            if (event.persisted) {
-                hideLoading();
-            }
-        });
-    });
-    
     // Get the current year
     const currentYear = new Date().getFullYear();
+
+    // Set the current year in the footer
     document.getElementById("current-year").textContent = currentYear;
   </script>
+
   <!--Footer Section End-->
 </body>
 </html>

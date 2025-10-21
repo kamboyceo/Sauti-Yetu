@@ -10,168 +10,11 @@
     <link rel="icon" href="fav1.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-    <!-- Loading Animation CSS -->
-    <style>
-        /* Loading Animation Styles */
-        #loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.95);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        
-        #loading-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .loading-logo {
-            width: 120px;
-            margin-bottom: 30px;
-            animation: pulse 2s infinite;
-        }
-        
-        .loading-spinner {
-            width: 60px;
-            height: 60px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
-        }
-        
-        .loading-text {
-            font-size: 18px;
-            color: #2c3e50;
-            font-weight: 500;
-            text-align: center;
-        }
-        
-        .loading-dots {
-            display: inline-block;
-            position: relative;
-            width: 80px;
-            height: 20px;
-            margin-top: 10px;
-        }
-        
-        .loading-dots div {
-            position: absolute;
-            top: 0;
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            background: #3498db;
-            animation-timing-function: cubic-bezier(0, 1, 1, 0);
-        }
-        
-        .loading-dots div:nth-child(1) {
-            left: 8px;
-            animation: loading-dots1 0.6s infinite;
-        }
-        
-        .loading-dots div:nth-child(2) {
-            left: 8px;
-            animation: loading-dots2 0.6s infinite;
-        }
-        
-        .loading-dots div:nth-child(3) {
-            left: 32px;
-            animation: loading-dots2 0.6s infinite;
-        }
-        
-        .loading-dots div:nth-child(4) {
-            left: 56px;
-            animation: loading-dots3 0.6s infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        @keyframes loading-dots1 {
-            0% { transform: scale(0); }
-            100% { transform: scale(1); }
-        }
-        
-        @keyframes loading-dots3 {
-            0% { transform: scale(1); }
-            100% { transform: scale(0); }
-        }
-        
-        @keyframes loading-dots2 {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(24px, 0); }
-        }
-        
-        /* Page transition effect */
-        .page-transition {
-            transition: opacity 0.3s ease;
-        }
-        
-        .page-loading {
-            opacity: 0.7;
-        }
-        
-        /* Donation card animations */
-        .d-card-inner {
-            transition: transform 0.6s ease;
-        }
-        
-        .d-card:hover .d-card-inner {
-            transform: rotateY(180deg);
-        }
-        
-        /* Button loading state */
-        .donate-btn-loading {
-            position: relative;
-            pointer-events: none;
-        }
-        
-        .donate-btn-loading::after {
-            content: '';
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            top: 50%;
-            left: 50%;
-            margin-left: -8px;
-            margin-top: -8px;
-            border: 2px solid #ffffff;
-            border-radius: 50%;
-            border-top-color: transparent;
-            animation: spin 1s linear infinite;
-        }
-    </style>
+    <!--Sauti Yetu Foundation Website By KamboyCEO-->
     
-    <title>Sauti Yetu Foundation - Donate</title>
+    <title>Sauti Yetu Foundation</title>
 </head>
 <body>
-  <!-- Loading Overlay -->
-  <div id="loading-overlay">
-    <img src="sylogo1.png" alt="Sauti Yetu Foundation" class="loading-logo">
-    <div class="loading-spinner"></div>
-    <div class="loading-text">Loading<span class="loading-dots"><div></div><div></div><div></div><div></div></span></div>
-  </div>
-
   <!--Navigation Bar-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
@@ -195,32 +38,32 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="About Us.html">About Us</a>
+              <a class="nav-link mx-lg-2"  href="About Us.html">About Us</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="Programs.html">Programs</a>
+              <a class="nav-link mx-lg-2"  href="Programs.html">Programs</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="News.html">News</a>
+              <a class="nav-link mx-lg-2"  href="News.html">News</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="Gallery.html">Gallery</a>
+              <a class="nav-link mx-lg-2"  href="Gallery.html">Gallery</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="Our Team.html">Team</a>
+              <a class="nav-link mx-lg-2"  href="Our Team.html">Team</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="Contact.html">Contact Us</a>
+              <a class="nav-link mx-lg-2"  href="Contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
-      <a href="Donate.html" class="Subscribe">DONATE</a>
+      <a href="Donate.html"  class="Subscribe">DONATE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -235,6 +78,7 @@
   <!--Donation Ends-->
 
   <!--Donation Body Starts-->
+
   <div class="d-heading">
     <h1>We work to help people with special needs live independently and participate fully in their communities</h1>
     <p>Your Donations To <strong>Sauti Yetu Foundation</strong> Will Help Transform The Lives Of People With 
@@ -270,7 +114,7 @@
         <div class="d-front">
           <h2 class="m-pesa">M-Pesa</h2>
           <p>Jinsi Ya Kulipia</p>
-          <button class="donate-btn">Donate Now</button>
+          <button>Donate Now</button>
         </div>
         <div class="d-back">
           <h2 class="m-pesa">M-Pesa</h2>
@@ -294,7 +138,7 @@
         <div class="d-front1">
           <h2 class="yas">Mixx</h2>
           <p>Jinsi Ya Kulipia</p>
-          <button class="donate-btn">Donate Now</button>
+          <button>Donate Now</button>
         </div>
         <div class="d-back">
           <h2 class="yas">Mixx By Yas</h2>
@@ -318,7 +162,7 @@
         <div class="d-front2">
           <h2 class="halo">Halo Pesa</h2>
           <p>Jinsi Ya Kulipia</p>
-          <button class="donate-btn">Donate Now</button>
+          <button>Donate Now</button>
         </div>
         <div class="d-back">
           <h2 class="halo">Halopesa</h2>
@@ -342,7 +186,7 @@
         <div class="d-front3">
           <h2 class="airtel">Airtel Money</h2>
           <p>Jinsi Ya Kulipia</p>
-          <button class="donate-btn">Donate Now</button>
+          <button>Donate Now</button>
         </div>
         <div class="d-back">
           <h2 class="airtel">Airtel Money</h2>
@@ -436,89 +280,12 @@
     </section>
   </footer>
 
-  <!-- Loading Animation JavaScript -->
+  <!-- JavaScript to change the year dynamically -->
   <script>
-    // Loading Animation Functions
-    function showLoading() {
-        const overlay = document.getElementById('loading-overlay');
-        overlay.classList.add('active');
-        document.body.classList.add('page-loading');
-    }
-    
-    function hideLoading() {
-        const overlay = document.getElementById('loading-overlay');
-        overlay.classList.remove('active');
-        document.body.classList.remove('page-loading');
-    }
-    
-    // Donation button handler
-    function handleDonationButtons() {
-        const donateButtons = document.querySelectorAll('.donate-btn');
-        
-        donateButtons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Add loading state to button
-                const originalText = this.textContent;
-                this.textContent = 'Processing...';
-                this.classList.add('donate-btn-loading');
-                
-                // Simulate donation processing
-                setTimeout(() => {
-                    // Remove loading state
-                    this.textContent = originalText;
-                    this.classList.remove('donate-btn-loading');
-                    
-                    // Show success message
-                    alert('Thank you for your donation! Your support helps transform lives.');
-                }, 2000);
-            });
-        });
-    }
-    
-    // Intercept all link clicks
-    document.addEventListener('DOMContentLoaded', function() {
-        // Hide loading animation when page first loads
-        setTimeout(hideLoading, 800);
-        
-        // Initialize donation button handlers
-        handleDonationButtons();
-        
-        // Add click event listeners to all internal links
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.href;
-                const currentOrigin = window.location.origin;
-                
-                // Only intercept internal links (not external links, anchors, or javascript links)
-                if (href && 
-                    href.startsWith(currentOrigin) && 
-                    !href.includes('#') && 
-                    !this.classList.contains('no-loading') &&
-                    href !== window.location.href) {
-                    
-                    e.preventDefault();
-                    showLoading();
-                    
-                    // Navigate to the new page after showing the animation
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 600);
-                }
-            });
-        });
-        
-        // Handle browser back/forward buttons
-        window.addEventListener('pageshow', function(event) {
-            if (event.persisted) {
-                hideLoading();
-            }
-        });
-    });
-    
     // Get the current year
     const currentYear = new Date().getFullYear();
+
+    // Set the current year in the footer
     document.getElementById("current-year").textContent = currentYear;
   </script>
   <!--Footer Section End-->
