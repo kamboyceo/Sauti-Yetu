@@ -2334,6 +2334,7 @@ html{
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 10px 0px;
+    text-align: justify;
   }
   .read-more{
   display: inline-block;
